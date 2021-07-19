@@ -16,7 +16,9 @@ const con = mysql.createConnection({
   database: "USM_ASSIGNMENT",
 });
 
-app.get("", (req, res, next) => {});
+app.get("", (req, res, next) => {
+  res.status(200).send({});
+});
 
 app.post("/login", async (req, res, next) => {
   console.log(req.body);
